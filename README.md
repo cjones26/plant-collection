@@ -1,50 +1,34 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Pair Programming Interview Question for an Expo / React Native Developer
+#### Objective:
+Develop a simple Expo / React Native application that allows users to track and manage their plant collection. The application should enable users to add new plants, remove plants, and view details about each plant. The application should persist data locally using AsyncStorage.
+#### Requirements:
+1. **Setup and Initialization**:
+  - Initialize a new Expo project.
+  - Set up a basic project structure with necessary folders (e.g., components, screens, utils).
+2. **Plant Collection Functionality**:
+  - Create a `PlantList` component to display the list of plants.
+  - Create a `PlantItem` component to represent each plant, name, description, and watering schedule.
+  - Implement functionality to add new plants, including name, description, and watering schedule.
+  - Implement functionality to delete existing plants.
+  - Implement functionality to edit plant details.
+3. **Data Persistence**:
+  - Use AsyncStorage to persist the plant collection data locally.
+  - Load the plant collection data from AsyncStorage when the app starts.
+4. **User Interface**:
+  - Create a simple and user-friendly UI.
+  - Use appropriate React Native components (e.g., `FlatList`, `TextInput`, `Button`, `Image`).
+5. **State Management**:
+  - Use React hooks (`useState`, `useEffect`) to manage state within the components.
+#### Instructions:
+1. **Setup**:
+  - Create a new Expo project using `expo init`.
+  - Install necessary dependencies (`@react-native-async-storage/async-storage`).
+2. **Implementation**:
+  - Implement the `PlantList` and `PlantItem` components.
+  - Implement the functionality to add a new plant to the collection.
+  - Implement the functionality to delete a plant from the collection.
+  - Implement the functionality to edit plant details.
+  - Use AsyncStorage to save and load the plant collection data.
+3. **Testing and Debugging**:
+  - Test the application to ensure that the plant collection data persists across app restarts.
+  - Debug any issues that arise during development.
